@@ -5,8 +5,7 @@ MAINTAINER A. Gökay Duman <aligokayduman@gmail.com>
 #Install Nginx
 RUN apt update \ 
     && apt upgrade -y \
-    && apt install -y apt-utils apt-transport-https \
-    && apt install nginx
+    && apt install -y apt-utils apt-transport-https nginx
 
 #Install CertBot
 RUN apt update \
