@@ -9,10 +9,10 @@ RUN apt update \
 
 #Install CertBot
 RUN apt update \
-    && apt install software-properties-common \
+    && apt install -y software-properties-common \
     && add-apt-repository universe \
     && add-apt-repository ppa:certbot/certbot \
     && apt update \
-    && apt install certbot python-certbot-nginx    
+    && apt install -y certbot python-certbot-nginx    
 
 CMD ["nginx", "-g", "daemon off;"]
